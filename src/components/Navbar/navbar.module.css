@@ -1,18 +1,19 @@
 /* Gfonts */
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans&family=Pacifico&family=Montserrat+Alternates&family=Saira:wght@600&display=swap');
 
 /*  */
 .container {
     /* background-color: #0D1115; */
-    background-color: black;
+    background-color: #171A1D;
 }
 
 .navbarNav a {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Saira', sans-serif;
     color: white;
 }
 
 .centerText {
-    font-family: 'Pacifico', cursive;
-    font-size:18px;
+    font-family: 'Saira', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+    font-size: 18px;
 }

@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans&family=Pacifico&family=Montserrat+Alternates&family=Saira&display=swap');
 
-.mainContainer{
-    background-color: black;
+.mainContainer {
+    background-color: #171A1D !important;
+}
+
+.attrA h3 {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 900;
+    font-family: 'Saira', sans-serif;
+}
+
+/* .nameTag {
+    background: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.nameTag h1 {
+    line-height: 140px !important;
+    font-family: 'Saira', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 180px;
+}
+
+.mainTagContainer {
+    padding: 1% 0 0 10%;
+}
+
+.firstName {
+    color: rgb(13, 0, 255);
+}
+
+.myImage {
+ 
 }
