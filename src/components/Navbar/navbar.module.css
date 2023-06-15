@@ -1,0 +1,18 @@
+/* Gfonts */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans&family=Pacifico&display=swap');
+
+/*  */
+.container {
+    /* background-color: #0D1115; */
+    background-color: black;
+}
+
+.navbarNav a {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.centerText {
+    font-family: 'Pacifico', cursive;
+    font-size:18px;
+}
