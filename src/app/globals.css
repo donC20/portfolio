@@ -1,13 +1,19 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
+
+.nav-link{ 
+  cursor:pointer;
+}
+
 :root {
   --globalColor: #171A1D;
 }
 
 body {
-  
+
   background-color: var(--globalColor);
 }

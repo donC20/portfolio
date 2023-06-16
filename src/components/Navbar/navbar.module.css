@@ -4,16 +4,24 @@
 /*  */
 .container {
     /* background-color: #0D1115; */
-    background-color: #171A1D;
+    /* background-color: #171A1D; */
+    background: transperant;
 }
 
 .navbarNav a {
     font-family: 'Saira', sans-serif;
     color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.navbarNav a:hover {
+    color: rgb(13, 0, 255);
 }
 
 .centerText {
-    font-family: 'Saira', sans-serif;
-    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Saira', sans-serif; */
+    font-family: 'Pacifico', cursive;
+    
     font-size: 18px;
 }
