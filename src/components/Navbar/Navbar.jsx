@@ -1,6 +1,6 @@
 'use client'
-import 'bootstrap/dist/js/bootstrap.min.js'
 import styles from './navbar.module.css'
+import 'bootstrap/dist/js/bootstrap.min.js';
 // import { Pacifico } from '@next/font/google'
 // const pacifico=({
 //     subsets:['latin'],
@@ -19,7 +19,7 @@ const Navbar = () => {
                             <a className="nav-link" aria-current="page" href="#">Home</a>
                             <a className="nav-link" href="#">Works</a>
                         </div>
-                        <div className={`text-center text-white w-100 ${styles.centerText}`}>Hello, there!</div>
+                        <div className={`text-center text-white w-100 ${styles.centerText}`}>{"<"}Hello, there!{"/>"}</div>
                         <div className={`navbar-nav d-flex justify-content-end w-100 ${styles.navbarNav}`}>
                             <a className="nav-link" href="#">About</a>
                             <a className="nav-link">Resume</a>
