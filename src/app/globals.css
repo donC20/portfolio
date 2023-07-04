@@ -9,15 +9,41 @@
   --globalColor: #14101e;
 }
 
+html {
+  width: 100%;
+  height: 100vh;
+}
+
 body {
   font-family: "Saira", sans-serif;
   background-color: var(--globalColor);
+  scroll-behavior: smooth;
 }
 
-.line {
+.sidelinesBody {
   position: absolute;
   left: 3%;
   height: 100%;
+  top: 2%;
+}
+.sidelinesBody i {
+  color: #5818de;
+}
+
+.whatIdo i {
+  color: #5818de;
+  font-size: 100px;
+}
+.whatIdo span {
+  font-family: "Russo one", sans-serif;
+  font-size: 30px;
+}
+
+.sidelines {
+  left: 3%;
+  height: 100%;
+  width: 2px;
+  background-color: #5818de;
 }
 
 .nav-link {
@@ -52,7 +78,7 @@ body {
 }
 
 .mainTagContainer {
-  padding: 1% 0 0 5%;
+  padding: 0 0 0 5%;
 }
 
 .firstName {
@@ -103,7 +129,7 @@ body {
 }
 
 .aboutPara {
-  padding: 0px 6% 2% 6%;
+  padding: 0px 6% 2% 5%;
   text-align: justify;
   /* font-family: "Saira", sans-serif; */
   font-family: "Roboto Mono", monospace;
@@ -127,16 +153,146 @@ body {
   color: var(--primary-color);
 }
 
+.codeBraces {
+  color: rgba(255, 255, 255, 0.578);
+  text-shadow: 0px 1px 13px #ffffff;
+}
+/* resume */
+/* education */
+
+.resumeDetails {
+  height: 75em;
+}
+
+.educationHead {
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Russo One", sans-serif;
+}
+.pathHeading {
+  width: 400px;
+  height: 47.999px;
+  flex-shrink: 0;
+  border-radius: 23px 8px 8px 23px;
+  background: linear-gradient(
+    90deg,
+    rgba(229, 229, 229, 0.28) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.roundedPath {
+  width: 50px;
+  height: 47.999px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #5818de;
+}
+.educationContent {
+  border-left: 1px solid rgba(255, 255, 255, 0.31);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+}
+.educationDetails_parent > div:nth-child(2) {
+  position: absolute;
+  bottom: -290px;
+  left: 700px;
+}
+.hrHR {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.31);
+  position: absolute;
+  bottom: -307px;
+  left: 10%;
+}
+.hrVR {
+  height: 1px;
+  width: 12%;
+  background-color: rgba(255, 255, 255, 0.31);
+  position: absolute;
+  bottom: -351px;
+  left: 4.1%;
+  transform: rotate(90deg);
+}
+.educationDetails_parent > div:nth-child(5) {
+  position: absolute;
+  bottom: -690px;
+}
+.ed_1 {
+  width: 700px;
+  margin-left: 10.5%;
+}
+.ed_2 {
+  width: 400px;
+  margin-left: 16%;
+  border-bottom: none;
+}
+.ed_3 {
+  width: 700px;
+  margin-left: 10.5%;
+  border-bottom: none;
+}
+
+.content {
+  width: 550px;
+}
+
+.content p:nth-child(3) {
+  font-size: 14px;
+}
+.content a {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+/* certifications */
+.certifications_container {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  background: linear-gradient(
+    117deg,
+    rgba(35, 37, 49, 0.5) 31.8%,
+    rgba(71, 74, 91, 0.6) 83.79%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  color: white !important;
+  cursor: pointer;
+}
+
+.card_cert_img {
+  width: inherit;
+  height: 100px;
+}
+
+.card_image_from {
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 115px;
+}
+
+.card_image_on {
+  z-index: 1;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  bottom: 143px;
+  right: 8px;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 480px) {
   .belowNav {
     margin-top: 25%;
   }
-
+  .sidelinesBodyL1 {
+    left: 1.5%;
+  }
   .mainTagContainer {
     position: absolute;
-    padding: 0 0 0 5%;
+    padding: 0 0 0 10%;
     bottom: 0px;
   }
 
@@ -160,6 +316,60 @@ body {
 
   .quotes {
     font-size: 14px;
+  }
+
+  .aboutPara {
+    padding: 10px 6% 2% 10%;
+  }
+
+  .sectionHeadings {
+    font-size: 40px;
+  }
+
+  /* education */
+  .pathHeading {
+    width: 300px;
+  }
+
+  .educationContent {
+    border-bottom: none;
+    border-left: 1px dashed rgba(255, 255, 255, 0.31);
+  }
+  .educationDetails_parent > div:nth-child(2) {
+    position: unset;
+  }
+  .hrHR {
+    display: none;
+  }
+  .hrVR {
+    display: none;
+  }
+  .educationDetails_parent > div:nth-child(5) {
+    position: unset;
+  }
+  .ed_1,
+  .ed_2,
+  .ed_3 {
+    width: max-content;
+    margin-left: 1.5em;
+  }
+
+  .content {
+    width: 320px;
+  }
+  .content > h5 {
+    font-size: 17px !important;
+  }
+
+  .content p:nth-child(2) {
+    font-size: 12px;
+  }
+  .content p:nth-child(3) {
+    font-size: 12px;
+  }
+  .content a {
+    margin-top: 0;
+    font-size: 12px;
   }
 }
 

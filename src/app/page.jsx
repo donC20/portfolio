@@ -31,6 +31,48 @@ const skillData = [
     progress: "82%"
   }
 ];
+const certificationsData = [
+  {
+    id: 1,
+    title: "Certified on PHP",
+    content: "Got certified on web development using php. Certification provided by",
+    company: "Udemy, Inc.",
+    img_company: "/images/udemy.png",
+    img_lang: "/images/phplogo.svg"
+  },
+
+  {
+    id: 2,
+    title: "Microsoft 365 Certified",
+    content: "Learned the basics of a Software as a Service (SaaS) cloud model and much more offered by",
+    company: "Microsoft Corporation.",
+    img_company: "/images/microsoft.jpg",
+    img_lang: "/images/microsoft-certified-fundamentals-badge.svg"
+  },
+  {
+    id: 3,
+    title: "GitHub participation certificate",
+    content: "Participated in the GitHub Hands-on Workshop organized by",
+    company: "Github & IncubateIND.",
+    img_company: "/images/github_logo.png",
+    img_lang: "/images/videoconference.svg"
+  }, {
+    id: 4,
+    title: "HTML Certification",
+    content: "Learned about HTML from",
+    company: "SoloLearn.",
+    img_company: "/images/Sololearn-Rebranding.jpg",
+    img_lang: "/images/sololearn_html.png"
+  },{
+    id: 5,
+    title: "Certification on Data mining",
+    content: "learned the basic concepts about data mining from",
+    company: "NPTEL platform.",
+    img_company: "/images/nptel_logo.png",
+    img_lang: "/images/sololearn_html.png"
+  },
+
+];
 
 
 export default function Home() {
@@ -39,15 +81,13 @@ export default function Home() {
       <div className="position-relative">
         <div className="d-flex flex-row  belowNav">
 
+          {/* cover component */}
           <div className="ms-1 d-flex flex-column mainTagContainer">
-            {/* <svg className="line" xmlns="http://www.w3.org/2000/svg">
-              <g id="Layer_1">
-                <title>Layer 1</title>
-                <path stroke-width="2" id="svg_1" d="m7.11341,17.44782c0.06545,225.83869 0.13091,451.67738 0.19636,677.51607" opacity="undefined" stroke-linecap="undefined" stroke-linejoin="undefined" stroke="#5818de" fill="none" />
-                <ellipse ry="7.7381" rx="6.54762" id="svg_2" cy="10" cx="7.4312" stroke="#5818de" fill="#5818de" />
-                <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="694.68458" x2="7.2163" y1="898.30121" x1="7.2163" stroke-width="2" stroke="#5818de" fill="none" />
-              </g>
-            </svg> */}
+            {/* side line */}
+            <div className="d-flex flex-column justify-content-center align-items-center gap-1 sidelinesBody sidelinesBodyL1">
+              <i className="bi bi-star-fill"></i>
+              <div className="sidelines"></div>
+            </div>
             <div className="attrA"><h3>I am</h3></div>
             <div className="nameTag">
               <h1 className="d-flex flex-row flex-sm-column  flex-md-column flex-lg-column gap-1"><span className="firstName">Don</span>Benny</h1>
@@ -59,30 +99,187 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* My image */}
           <div className="myImage">
             <Image src="/donmain_page.png" fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="don_displayImage" />
           </div>
         </div>
       </div>
+      {/* about me */}
       <section className="">
-        <div className="text-white  aboutPara">
-          <span className="sectionHeadings">About <span className="secondWord">me</span></span>
-          <br />
-          I am a highly skilled and motivated individual with a strong passion for learning and self-improvement. Throughout my professional and personal experiences, I have consistently demonstrated my ability to adapt to new situations and take on challenges with a positive attitude. I have the ability to work well both independently and as part of a team. I am excited to continue to grow and develop my skills in new environments and am confident that I have the drive and determination to succeed in any venture I undertake.
+        {/* side line */}
+        <div className="d-flex flex-row align-items-center position-relative">
+          <div className="d-flex flex-column justify-content-center align-items-center mt-2 gap-1 sidelinesBody ">
+            <i className="bi bi-star-fill"></i>
+            <div className="sidelines"></div>
+          </div>
+          {/* about me paragraph */}
+          <div className="text-white  aboutPara">
+            <span className="sectionHeadings">About <span className="secondWord">me</span></span>
+            <br />
+            I am a highly skilled and motivated individual with a strong passion for learning and self-improvement. Throughout my professional and personal experiences, I have consistently demonstrated my ability to adapt to new situations and take on challenges with a positive attitude. I have the ability to work well both independently and as part of a team. I am excited to continue to grow and develop my skills in new environments and am confident that I have the drive and determination to succeed in any venture I undertake.
+          </div>
         </div>
-        <div className="p-5 row gap-3 justify-content-center align-items-center w-100">
-          {skillData.map(item => (
-            <div className="col-5 col-sm-3 col-lg-2 d-flex flex-row gap-2 align-items-center skillProgress" key={item.id}>
-              <Image src={`/icons/${item.img}`} width={38} height={38} alt="html" />
-              <div className="vertical_line" />
-              <div className="d-flex flex-column align-items-start">
-                <span>{item.progress}</span>
-                <span>{item.lang}</span>
+        {/* skills contaienr */}
+        <div className="d-flex flex-row align-items-center position-relative">
+          {/* side line */}
+          <div className="d-flex flex-column justify-content-center align-items-center mt-3 gap-1 sidelinesBody ">
+            <span className="codeBraces bg-transparent">{"{ }"}</span>
+            <div className="sidelines"></div>
+          </div>
+          {/* skills */}
+          <div className="p-5 row gap-3 justify-content-center align-items-center w-100">
+            {skillData.map(item => (
+              <div className="col-5 col-sm-3 col-lg-2 d-flex flex-row gap-2 align-items-center skillProgress" key={item.id}>
+                <Image src={`/icons/${item.img}`} width={38} height={38} alt="html" />
+                <div className="vertical_line" />
+                <div className="d-flex flex-column align-items-start">
+                  <span>{item.progress}</span>
+                  <span>{item.lang}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="">
+        {/* what i do container */}
+        <div className="d-flex flex-row align-items-center position-relative">
+          <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody ">
+            <i className="bi bi-briefcase-fill"></i>
+            <div className="sidelines"></div>
+          </div>
+          {/* what i do head and content */}
+          <div className="text-white aboutPara">
+            <span className="sectionHeadings">What I <span className="secondWord">do</span></span>
+            <br />
+            <div className="d-flex align-items-center justify-content-center row whatIdo">
+              <div className="d-flex flex-column col-lg-6 col-12 align-items-center justify-content-center p-lg-5 p-2">
+                <i className="bi bi-puzzle-fill"></i>
+                <span className="text-white">Designing</span>
+                <p>Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure</p>
+              </div>
+              <div className="col-lg-6 col-12 d-flex flex-column col-6 align-items-center justify-content-center p-lg-5 p-2">
+                <i className="bi bi-code-slash"></i>
+                <span className="text-white">Developing</span>
+                <p>Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* my resume */}
+      <div className="resumeDetails position-relative">
+        {/* what i do container */}
+        <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-1 sidelinesBody">
+          <i className="bi bi-briefcase-fill"></i>
+          <div className="sidelines"></div>
+        </div>
+        <div className="d-flex">
+
+          {/* what i do head and content */}
+          <div className="text-white aboutPara">
+
+            <span className="sectionHeadings">My <span className="secondWord">Resume</span></span>
+            <br />
+            <div className="ps-lg-5 pt-lg-5 educationHead">Education</div>
+
+            {/* education details parent container */}
+            <div className="d-flex flex-column flex-lg-row  position-relative educationDetails_parent">
+              <div className="d-flex flex-column">
+                {/* individual path containers */}
+                <div className="d-flex flex-row align-items-center pathHeading mt-lg-2 ms-lg-5 ms-md-5">
+                  <div className="roundedPath justify-content-center d-flex align-items-center">1</div>
+                  <span className='ms-5'>2002-2016</span>
+                </div>
+                {/* content */}
+                <div className="educationContent ed_1">
+                  <div className="content p-4">
+                    <h5 className='fw-bold'>Vijayamatha Public School</h5>
+                    <p className='ps-2 text-secondary'>Udumbanchola P.O, Idukki, Kerala</p>
+                    <p className="ps-2">
+                      Vijayamtha Public School is a catholic institution established and managed by the Sisters of Adoration of the Blessed Sacrament(SABS) of Jaimatha Province Idukki. The school is directly under the management of Jairani Education trust and is affiliated to CBSE.
+                    </p>
+                    <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
+                  </div>
+                </div>
+              </div>
+              <div className="d-flex flex-column">
+                {/* individual path containers */}
+                <div className="d-flex flex-row align-items-center pathHeading mt-lg-2 ms-lg-5 ms-md-5">
+                  <div className="roundedPath justify-content-center d-flex align-items-center">2</div>
+                  <span className='ms-5'>2002-2016</span>
+                </div>
+                {/* content */}
+                <div className="educationContent ed_2">
+                  <div className="content p-4">
+                    <h5 className='fw-bold'>St.Xaviers HSS</h5>
+                    <p className='ps-2 text-secondary'>Chemmannar P.O, Idukki, Kerala</p>
+                    <p className="ps-2">
+                      Vijayamtha Public School is a catholic institution established and managed by the Sisters of Adoration of the Blessed Sacrament(SABS) of Jaimatha Province Idukki. The school is directly under the management of Jairani Education trust and is affiliated to CBSE.
+                    </p>
+                    <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
+                  </div>
+                </div>
+              </div>
+              <hr className='hrHR' />
+              <hr className='hrVR' />
+
+              <div className="d-flex flex-column">
+
+                {/* individual path containers */}
+                <div className="d-flex flex-row align-items-center pathHeading mt-lg-2 ms-lg-5 ms-md-5">
+                  <div className="roundedPath justify-content-center d-flex align-items-center">3</div>
+                  <span className='ms-5'>2002-2016</span>
+                </div>
+                {/* content */}
+                <div className="educationContent ed_3">
+                  <div className="content p-4">
+                    <h5 className='fw-bold'>Amal Jyothi College of Engineering</h5>
+                    <p className='ps-2 text-secondary'>kanjirapally P.O, Kottayam, Kerala</p>
+                    <p className="ps-2">
+                      Vijayamtha Public School is a catholic institution established and managed by the Sisters of Adoration of the Blessed Sacrament(SABS) of Jaimatha Province Idukki. The school is directly under the management of Jairani Education trust and is affiliated to CBSE.
+                    </p>
+                    <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-4 position-relative">
+        {/* what i do container */}
+        <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody">
+          <i className="bi bi-briefcase-fill"></i>
+          <div className="sidelines"></div>
+        </div>
+        <div className="d-flex flex-row align-items-center">
+
+          {/* what i do head and content */}
+          <div className="text-white aboutPara">
+            <span className="sectionHeadings">My <span className="secondWord">Certifications</span></span>
+          </div>
+        </div>
+        <div className="row justify-content-center align-items-center p-3 gap-5">
+
+          {certificationsData.map(item => (
+            <div className="card certifications_container col-3 p-0" key={item.id}>
+              <div className="card_cert_img d-flex flex-row">
+                <img className="card_image_from" src={item.img_company} alt="Card image cap" />
+                <img className="card_image_on" src={item.img_lang} alt="Card image cap" />
+              </div>
+              <hr />
+              <div className="card-body">
+                <b className="card-title">{item.title}</b>
+                <p className="card-text">{item.content} <b>{item.company}</b></p>
               </div>
             </div>
           ))}
+
+
         </div>
-      </section>
-    </main>
+      </div>
+    </main >
   )
 }
