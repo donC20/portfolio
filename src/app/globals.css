@@ -18,6 +18,7 @@ body {
   font-family: "Saira", sans-serif;
   background-color: var(--globalColor);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .sidelinesBody {
@@ -191,6 +192,7 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.31);
   border-bottom: 1px solid rgba(255, 255, 255, 0.31);
 }
+
 .educationDetails_parent > div:nth-child(2) {
   position: absolute;
   bottom: -290px;
@@ -245,6 +247,14 @@ body {
 }
 
 /* certifications */
+
+.cert_backBody{
+  background-image:url("/images/awards_background.svg");
+ background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 .certifications_container {
   position: relative;
   width: 18rem;
@@ -257,6 +267,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.31);
   color: white !important;
   cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.certifications_container:hover {
+  box-shadow: 38px 38px 76px #0b0911, -38px -38px 76px #1d172c;
+  transform: scale(1.2);
+-webkit-transform: scale(1);
+-moz-transform: scale(1.2);
 }
 
 .card_cert_img {
@@ -279,6 +297,10 @@ body {
   position: absolute;
   bottom: 143px;
   right: 8px;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /* responsiveness */

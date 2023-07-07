@@ -1,4 +1,7 @@
+'use client'
 import Image from 'next/image'
+import Contact from '@/components/Contact/page'
+import Footer from '@/components/Footer/page'
 const skillData = [
   {
     id: 1,
@@ -38,7 +41,8 @@ const certificationsData = [
     content: "Got certified on web development using php. Certification provided by",
     company: "Udemy, Inc.",
     img_company: "/images/udemy.png",
-    img_lang: "/images/phplogo.svg"
+    img_lang: "/images/phplogo.svg",
+    link: "https://www.udemy.com/certificate/UC-49e98af8-0506-4181-af1e-bb44ad534562/",
   },
 
   {
@@ -47,7 +51,8 @@ const certificationsData = [
     content: "Learned the basics of a Software as a Service (SaaS) cloud model and much more offered by",
     company: "Microsoft Corporation.",
     img_company: "/images/microsoft.jpg",
-    img_lang: "/images/microsoft-certified-fundamentals-badge.svg"
+    img_lang: "/images/microsoft-certified-fundamentals-badge.svg",
+    link: "https://www.credly.com/badges/f121237f-2551-4a06-b4f2-52bbc486cefa/public_url",
   },
   {
     id: 3,
@@ -55,21 +60,55 @@ const certificationsData = [
     content: "Participated in the GitHub Hands-on Workshop organized by",
     company: "Github & IncubateIND.",
     img_company: "/images/github_logo.png",
-    img_lang: "/images/videoconference.svg"
+    img_lang: "/images/videoconference.svg",
+    link: "https://drive.google.com/file/d/1LasLCxfCEnIMoYtMnokeyt8xd7eQFJRf/view?usp=sharing",
+
   }, {
     id: 4,
     title: "HTML Certification",
     content: "Learned about HTML from",
     company: "SoloLearn.",
     img_company: "/images/Sololearn-Rebranding.jpg",
-    img_lang: "/images/sololearn_html.png"
+    img_lang: "/images/sololearn_html.png",
+    link: "https://www.sololearn.com/Certificate/CT-J0W2A5DI/pdf",
+
   },{
     id: 5,
     title: "Certification on Data mining",
-    content: "learned the basic concepts about data mining from",
+    content: "Learned the basic concepts about data mining from",
     company: "NPTEL platform.",
-    img_company: "/images/nptel_logo.png",
-    img_lang: "/images/sololearn_html.png"
+    img_company: "/images/nptel-logo.jpg",
+    img_lang: "/images/datamining.svg",
+    link: "https://drive.google.com/file/d/1C0IUa066mLR8ZRiWVP7PqkyhHNMJjqRK/view?usp=sharing",
+
+  },
+  {
+    id: 6,
+    title: "Certification on Python",
+    content: "Learned the basic concepts of Python programming",
+    company: "Kaggle.",
+    img_company: "/images/kaggle_logo.png",
+    img_lang: "/images/python_logo.svg",
+    link: "https://www.kaggle.com/learn/certification/donbenny/python",
+
+  },
+  {
+    id: 7,
+    title: "AWS Academy Cloud Foundations",
+    content: "Learned the basic concepts of AWS Academy Cloud Foundations provided by",
+    company: "AWS Academy.",
+    img_company: "/images/AWS_ertification.jpg",
+    img_lang: "/images/awsfbadge.png",
+    link: "https://www.credly.com/badges/ee93a596-b9df-4c96-96fb-3dc55dbdff85/linked_in_profile",
+  },
+  {
+    id: 8,
+    title: "Introduction to Flutter",
+    content: "Learned the basic concepts of Flutter provided by",
+    company: "Simplilearn.",
+    img_company: "/images/simplilearn.jpg",
+    img_lang: "/images/flutter-icon.svg",
+    link: "https://simpli-web.app.link/e/kdRK8k9teBb",
   },
 
 ];
@@ -250,21 +289,20 @@ export default function Home() {
       </div>
       <div className="mt-4 position-relative">
         {/* what i do container */}
-        <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody">
+        <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-1 sidelinesBody">
           <i className="bi bi-briefcase-fill"></i>
           <div className="sidelines"></div>
         </div>
         <div className="d-flex flex-row align-items-center">
 
-          {/* what i do head and content */}
+          {/* Cerifications */}
           <div className="text-white aboutPara">
             <span className="sectionHeadings">My <span className="secondWord">Certifications</span></span>
           </div>
         </div>
-        <div className="row justify-content-center align-items-center p-3 gap-5">
-
+        <div className="row justify-content-center align-items-center p-3 gap-5 cert_backBody">
           {certificationsData.map(item => (
-            <div className="card certifications_container col-3 p-0" key={item.id}>
+            <a href={item.link} className="card certifications_container col-3 p-0" key={item.id}>
               <div className="card_cert_img d-flex flex-row">
                 <img className="card_image_from" src={item.img_company} alt="Card image cap" />
                 <img className="card_image_on" src={item.img_lang} alt="Card image cap" />
@@ -274,12 +312,29 @@ export default function Home() {
                 <b className="card-title">{item.title}</b>
                 <p className="card-text">{item.content} <b>{item.company}</b></p>
               </div>
-            </div>
+            </a>
           ))}
+        </div>
 
+      </div>
+      <div className="mt-4 position-relative">
+        {/* Contact */}
+        <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody">
+          <i className="bi bi-briefcase-fill"></i>
+          <div className="sidelines"></div>
+        </div>
+        <div className="d-flex flex-row align-items-center">
 
+          {/* contact */}
+          <div className="text-white aboutPara">
+            <span className="sectionHeadings">Contact<span className="secondWord"> me</span></span>
+          </div>
+        </div>
+        <div className=" p-3 contact_backBody">
+          <Contact/>
         </div>
       </div>
+      <Footer/>
     </main >
   )
 }

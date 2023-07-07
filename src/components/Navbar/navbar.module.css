@@ -8,14 +8,14 @@
     background: var(--globalColor);
 }
 
-.navbarNav a {
+.navbarNav a,.navbarNav i {
     font-family: 'Saira', sans-serif;
     color: white;
     font-weight: 700;
     font-size: 14px;
 }
 
-.navbarNav a:hover {
+.navbarNav a:hover,.navbarNav i:hover  {
     /* color: rgb(13, 0, 255); */
     color: #5818DE;
 }

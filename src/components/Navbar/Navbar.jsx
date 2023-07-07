@@ -24,7 +24,7 @@ const Navbar = () => {
                             <a className="nav-link" href="#">About</a>
                             <a className="nav-link">Resume</a>
                             <a className="nav-link">Contact</a>
-                            <a className="nav-link"><i className="bi bi-github"></i></a>
+                            <a className="nav-link " href='https://github.com/donC20'><i className="bi bi-github"></i></a>
                         </div>
                     </div>
                 </div>

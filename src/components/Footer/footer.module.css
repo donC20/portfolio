@@ -1,0 +1,13 @@
+.MainFooter {
+  margin-top: 5vh;
+  background-color: black;
+  padding: 1%;
+}
+.MainFooter a {
+  color: white;
+  cursor: pointer;
+}
+.MainFooter p {
+  color: white;
+  cursor: pointer;
+}

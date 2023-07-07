@@ -1,0 +1,206 @@
+.overlay {
+  background-image: linear-gradient(
+    to right,
+    rgba(90, 100, 232, 0.9),
+    rgba(84, 96, 234, 0.9)
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  padding: 110px 0;
+}
+.sectionBg {
+  background-image: url("https://i.ibb.co/9p3Cnk9/slider-2.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: left;
+  z-index: 0;
+  padding: 0;
+  min-height: auto;
+  overflow: hidden;
+}
+.contactForm {
+  position: relative;
+  padding: 10%;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 10px 40px 40px rgba(0, 0, 0, 0.2);
+  transform: rotateX(-10deg) rotateY(28deg);
+}
+
+.contactForm input {
+  border: 0;
+  background: transparent;
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 11px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.contactForm textarea {
+  border: 0;
+  background: transparent;
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 11px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+.contactForm input::placeholder {
+  color: #00000085;
+}
+.contactForm textarea::placeholder {
+  color: #00000085;
+}
+.contactForm input {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 55px;
+}
+.contactForm input:hover,
+.contactForm input:focus {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid transparent;
+  border-bottom-color: #5818de;
+}
+.contactForm textarea:hover,
+.contactForm textarea:focus {
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  border-bottom-color: #5818de;
+}
+
+.tasoBtn {
+  background-color: #fff;
+  margin: 25px 0;
+  color: #214dcb;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.32);
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.17);
+}
+.contactInfo {
+  padding: 0 30px 0px 0;
+}
+
+h2.contactTitle {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contactInfo p {
+  color: #ececec;
+}
+
+ul.contactInfo {
+  margin-top: 30px;
+}
+
+ul.contactInfo li {
+  margin-bottom: 22px;
+}
+
+ul.contactInfo span {
+  font-size: 20px;
+  line-height: 26px;
+}
+ul.contactInfo li {
+  display: flex;
+  width: 100%;
+}
+
+.infoLeft > i {
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.infoLeft > h4 {
+  color: #fff;
+  font-size: 16px;
+}
+.contactPage .infoleft i {
+  color: #5818de;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px 10px;
+  font-size: 17px;
+  line-height: 28px;
+  border: 0px;
+  border-radius: 10px;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+.btnBig {
+  color: #ffffff;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(45, 45, 45, 0.47843137254901963);
+  box-shadow: 2px 5px 10px 0px rgba(45, 45, 45, 0.19);
+  color: #fff !important;
+  margin-right: 20px;
+  background: #5818de;
+  transition: 0.2s;
+  border: 2px solid #5818de;
+  margin-top: 50px;
+}
+
+.btnBig:hover {
+  background: #5818de;
+}
+
+@media only screen and (max-width: 767px) {
+  .contactForm {
+    padding: 30px;
+  }
+  .contactForm:before {
+    width: 100%;
+  }
+}
