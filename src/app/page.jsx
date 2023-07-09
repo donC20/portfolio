@@ -72,7 +72,7 @@ const certificationsData = [
     img_lang: "/images/sololearn_html.png",
     link: "https://www.sololearn.com/Certificate/CT-J0W2A5DI/pdf",
 
-  },{
+  }, {
     id: 5,
     title: "Certification on Data mining",
     content: "Learned the basic concepts about data mining from",
@@ -137,6 +137,18 @@ export default function Home() {
                 Transforming ideas into elegant solutions through code, I strive to craft innovative digital experiences that leave a lasting impact.
               </div>
             </div>
+            <button className="btn mt-4" type="button">
+              <strong>Resume</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+
+              <div id="glow">
+                <div className="circle"></div>
+                <div className="circle"></div>
+              </div>
+            </button>
+
           </div>
           {/* My image */}
           <div className="myImage">
@@ -331,10 +343,10 @@ export default function Home() {
           </div>
         </div>
         <div className=" p-3 contact_backBody">
-          <Contact/>
+          <Contact />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </main >
   )
 }
