@@ -1,7 +1,5 @@
 'use client'
 import styles from './contact.module.css'
-import 'bootstrap/dist/js/bootstrap.min.js';
-
 const Contact = () => {
     return (
         <div>

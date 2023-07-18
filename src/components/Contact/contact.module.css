@@ -43,7 +43,6 @@
   background-color: transparent;
   background-image: none;
   border-radius: 0;
-  -webkit-appearance: none;
   transition: 0.3s ease-in-out;
   border: 2px solid transparent;
   border-bottom-color: rgba(0, 0, 0, 0.1);

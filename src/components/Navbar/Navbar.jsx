@@ -1,11 +1,5 @@
 'use client'
 import styles from './navbar.module.css'
-import 'bootstrap/dist/js/bootstrap.min.js';
-// import { Pacifico } from '@next/font/google'
-// const pacifico=({
-//     subsets:['latin'],
-//     weight:400,
-// })
 const Navbar = () => {
     return (
         <div>
