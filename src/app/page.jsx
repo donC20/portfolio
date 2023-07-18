@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Contact from '@/components/Contact/page'
 import Footer from '@/components/Footer/page'
+
 const skillData = [
   {
     id: 1,
@@ -316,8 +317,8 @@ export default function Home() {
           {certificationsData.map(item => (
             <a href={item.link} className="card certifications_container col-3 p-0" key={item.id}>
               <div className="card_cert_img d-flex flex-row">
-                <img className="card_image_from" src={item.img_company} alt="Card image cap" />
-                <img className="card_image_on" src={item.img_lang} alt="Card image cap" />
+                <Image className="card_image_from" src={item.img_company} width={100} height={115} alt="Card image cap" />
+                <Image className="card_image_on" src={item.img_lang} width={55} height={55} alt="Card image cap" />
               </div>
               <hr />
               <div className="card-body">
