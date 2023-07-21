@@ -16,7 +16,8 @@ html {
 
 body {
   font-family: "Saira", sans-serif;
-  background-color: var(--globalColor);
+  /* background-color: var(--globalColor); */
+  background-color: black !important;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
