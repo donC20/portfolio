@@ -1,7 +1,5 @@
 'use client'
 import styles from './footer.module.css'
-// import 'bootstrap/dist/js/bootstrap.min.js';
-
 const Footer = () => {
     return (
         <div>
