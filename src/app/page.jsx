@@ -153,7 +153,7 @@ export default function Home() {
           </div>
           {/* My image */}
           <div className="myImage">
-            <Image src="/donmain_page.png" fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="don_displayImage" />
+            <Image src="donmain_page.png" fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt="don_displayImage" />
           </div>
         </div>
       </div>
