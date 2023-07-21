@@ -41,8 +41,8 @@ const certificationsData = [
     title: "Certified on PHP",
     content: "Got certified on web development using php. Certification provided by",
     company: "Udemy, Inc.",
-    img_company: "/images/udemy.png",
-    img_lang: "/images/phplogo.svg",
+    img_company: "images/udemy.png",
+    img_lang: "images/phplogo.svg",
     link: "https://www.udemy.com/certificate/UC-49e98af8-0506-4181-af1e-bb44ad534562/",
   },
 
@@ -51,8 +51,8 @@ const certificationsData = [
     title: "Microsoft 365 Certified",
     content: "Learned the basics of a Software as a Service (SaaS) cloud model and much more offered by",
     company: "Microsoft Corporation.",
-    img_company: "/images/microsoft.jpg",
-    img_lang: "/images/microsoft-certified-fundamentals-badge.svg",
+    img_company: "images/microsoft.jpg",
+    img_lang: "images/microsoft-certified-fundamentals-badge.svg",
     link: "https://www.credly.com/badges/f121237f-2551-4a06-b4f2-52bbc486cefa/public_url",
   },
   {
@@ -60,8 +60,8 @@ const certificationsData = [
     title: "GitHub participation certificate",
     content: "Participated in the GitHub Hands-on Workshop organized by",
     company: "Github & IncubateIND.",
-    img_company: "/images/github_logo.png",
-    img_lang: "/images/videoconference.svg",
+    img_company: "images/github_logo.png",
+    img_lang: "images/videoconference.svg",
     link: "https://drive.google.com/file/d/1LasLCxfCEnIMoYtMnokeyt8xd7eQFJRf/view?usp=sharing",
 
   }, {
@@ -69,8 +69,8 @@ const certificationsData = [
     title: "HTML Certification",
     content: "Learned about HTML from",
     company: "SoloLearn.",
-    img_company: "/images/Sololearn-Rebranding.jpg",
-    img_lang: "/images/sololearn_html.png",
+    img_company: "images/Sololearn-Rebranding.jpg",
+    img_lang: "images/sololearn_html.png",
     link: "https://www.sololearn.com/Certificate/CT-J0W2A5DI/pdf",
 
   }, {
@@ -78,8 +78,8 @@ const certificationsData = [
     title: "Certification on Data mining",
     content: "Learned the basic concepts about data mining from",
     company: "NPTEL platform.",
-    img_company: "/images/nptel-logo.jpg",
-    img_lang: "/images/datamining.svg",
+    img_company: "images/nptel-logo.jpg",
+    img_lang: "images/datamining.svg",
     link: "https://drive.google.com/file/d/1C0IUa066mLR8ZRiWVP7PqkyhHNMJjqRK/view?usp=sharing",
 
   },
@@ -88,8 +88,8 @@ const certificationsData = [
     title: "Certification on Python",
     content: "Learned the basic concepts of Python programming",
     company: "Kaggle.",
-    img_company: "/images/kaggle_logo.png",
-    img_lang: "/images/python_logo.svg",
+    img_company: "images/kaggle_logo.png",
+    img_lang: "images/python_logo.svg",
     link: "https://www.kaggle.com/learn/certification/donbenny/python",
 
   },
@@ -98,8 +98,8 @@ const certificationsData = [
     title: "AWS Academy Cloud Foundations",
     content: "Learned the basic concepts of AWS Academy Cloud Foundations provided by",
     company: "AWS Academy.",
-    img_company: "/images/AWS_ertification.jpg",
-    img_lang: "/images/awsfbadge.png",
+    img_company: "images/AWS_ertification.jpg",
+    img_lang: "images/awsfbadge.png",
     link: "https://www.credly.com/badges/ee93a596-b9df-4c96-96fb-3dc55dbdff85/linked_in_profile",
   },
   {
@@ -107,8 +107,8 @@ const certificationsData = [
     title: "Introduction to Flutter",
     content: "Learned the basic concepts of Flutter provided by",
     company: "Simplilearn.",
-    img_company: "/images/simplilearn.jpg",
-    img_lang: "/images/flutter-icon.svg",
+    img_company: "images/simplilearn.jpg",
+    img_lang: "images/flutter-icon.svg",
     link: "https://simpli-web.app.link/e/kdRK8k9teBb",
   },
 
