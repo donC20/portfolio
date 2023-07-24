@@ -128,7 +128,7 @@ export default function Home() {
               <i className="bi bi-star-fill"></i>
               <div className="sidelines"></div>
             </div>
-            <div className="attrA"><h3>Hey there!</h3></div>
+            <div className="attrA"><h3>I am</h3></div>
             <div className="nameTag">
               <h1 className="d-flex flex-row flex-sm-column  flex-md-column flex-lg-column gap-1"><span className="firstName">Don</span>Benny</h1>
             </div>
