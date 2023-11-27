@@ -116,6 +116,16 @@ const certificationsData = [
 
 
 export default function Home() {
+  function downloadResume(){
+      var path="downloadable/Software Engineer.pdf";
+      var link = document.createElement('a');
+      link.setAttribute('href', path); // Replace with the actual path to your file
+      link.setAttribute('download', 'resume-don-benny'); // Replace with the desired file name
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link)
+  }
   return (
     <main className="position-relative">
       <div className="position-relative">
@@ -138,7 +148,7 @@ export default function Home() {
                 Transforming ideas into elegant solutions through code, I strive to craft innovative digital experiences that leave a lasting impact.
               </div>
             </div>
-            <button className="btn mt-4" type="button">
+            <button className="btn mt-4" id="resume_download" type="button" onClick={downloadResume}>
               <strong>Resume</strong>
               <div id="container-stars">
                 <div id="stars"></div>
@@ -268,9 +278,9 @@ export default function Home() {
                     <h5 className='fw-bold'>St.Xaviers HSS</h5>
                     <p className='ps-2 text-secondary'>Chemmannar P.O, Idukki, Kerala</p>
                     <p className="ps-2">
-                      Vijayamtha Public School is a catholic institution established and managed by the Sisters of Adoration of the Blessed Sacrament(SABS) of Jaimatha Province Idukki. The school is directly under the management of Jairani Education trust and is affiliated to CBSE.
+                    St. Xaviers Higher Secondary School is a well-known educational institution that has made a significant impact in the field of education.
                     </p>
-                    <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
+                    {/* <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a> */}
                   </div>
                 </div>
               </div>
@@ -290,9 +300,9 @@ export default function Home() {
                     <h5 className='fw-bold'>Amal Jyothi College of Engineering</h5>
                     <p className='ps-2 text-secondary'>kanjirapally P.O, Kottayam, Kerala</p>
                     <p className="ps-2">
-                      Vijayamtha Public School is a catholic institution established and managed by the Sisters of Adoration of the Blessed Sacrament(SABS) of Jaimatha Province Idukki. The school is directly under the management of Jairani Education trust and is affiliated to CBSE.
+                    Amal Jyothi College of Engineering (Autonomous), Kanjirapally, is the first engineering college in Kerala to obtain NAAC accreditation with A grade, and the first new generation engineering college in the State to secure the prestigious NBA accreditation for prime departments. Amal Jyothi is approved by the All India Council for Technical Education (AICTE), New Delhi.
                     </p>
-                    <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
+                    <a className='ps-2' href="https://www.ajce.in/">https://www.ajce.in /</a>
                   </div>
                 </div>
               </div>
