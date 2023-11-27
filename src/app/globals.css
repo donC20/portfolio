@@ -28,6 +28,7 @@ body {
   height: 100%;
   top: 2%;
 }
+
 .sidelinesBody i {
   color: #5818de;
 }
@@ -36,6 +37,7 @@ body {
   color: #5818de;
   font-size: 100px;
 }
+
 .whatIdo span {
   font-family: "Russo one", sans-serif;
   font-size: 30px;
@@ -95,11 +97,9 @@ body {
 .quoteSide {
   border-left: 2px solid rgba(255, 255, 255, 0.97);
 
-  background: linear-gradient(
-    130deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    #ffffff00 100%
-  );
+  background: linear-gradient(130deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      #ffffff00 100%);
 }
 
 /* resume button */
@@ -115,7 +115,7 @@ body {
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #ffdb3b 10%, #FE53BB 45%, #8F51EA 67%, #0044ff 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -269,13 +269,15 @@ strong {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+
 /*  */
 
 .quotes {
-  /* font-family: "Saira", sans-serif; */
-  font-family: "Roboto Mono", monospace;
+  font-family: "Saira", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: rgba(255, 255, 255, 0.97);
 }
+
 .myImage {
   position: relative;
   width: 850px;
@@ -302,14 +304,22 @@ strong {
 .aboutPara {
   padding: 0px 6% 2% 5%;
   text-align: justify;
-  /* font-family: "Saira", sans-serif; */
-  font-family: "Roboto Mono", monospace;
+  font-family: "Saira", sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
 }
 
 .vertical_line {
   border-left: 1px solid rgba(255, 255, 255, 0.493);
   height: 38px;
 }
+
+.skillProgress {
+  background-color: rgba(48, 48, 48, 0.534);
+  padding: 1%;
+  border-radius: 10px;
+  border: 0.5px solid rgba(255, 255, 255, 0.13);
+}
+
 
 .skillProgress span {
   line-height: 18px;
@@ -328,6 +338,7 @@ strong {
   color: rgba(255, 255, 255, 0.578);
   text-shadow: 0px 1px 13px #ffffff;
 }
+
 /* resume */
 /* education */
 
@@ -340,17 +351,17 @@ strong {
   color: #ffffff;
   font-family: "Russo One", sans-serif;
 }
+
 .pathHeading {
   width: 400px;
   height: 47.999px;
   flex-shrink: 0;
   border-radius: 23px 8px 8px 23px;
-  background: linear-gradient(
-    90deg,
-    rgba(229, 229, 229, 0.28) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(229, 229, 229, 0.28) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
+
 .roundedPath {
   width: 50px;
   height: 47.999px;
@@ -358,16 +369,18 @@ strong {
   border-radius: 50px;
   background: #5818de;
 }
+
 .educationContent {
   border-left: 1px solid rgba(255, 255, 255, 0.31);
   border-bottom: 1px solid rgba(255, 255, 255, 0.31);
 }
 
-.educationDetails_parent > div:nth-child(2) {
+.educationDetails_parent>div:nth-child(2) {
   position: absolute;
   bottom: -290px;
   left: 700px;
 }
+
 .hrHR {
   height: 1px;
   width: 100%;
@@ -376,6 +389,7 @@ strong {
   bottom: -307px;
   left: 10%;
 }
+
 .hrVR {
   height: 1px;
   width: 12%;
@@ -385,19 +399,23 @@ strong {
   left: 4.1%;
   transform: rotate(90deg);
 }
-.educationDetails_parent > div:nth-child(5) {
+
+.educationDetails_parent>div:nth-child(5) {
   position: absolute;
   bottom: -690px;
 }
+
 .ed_1 {
   width: 700px;
   margin-left: 10.5%;
 }
+
 .ed_2 {
   width: 400px;
   margin-left: 16%;
   border-bottom: none;
 }
+
 .ed_3 {
   width: 700px;
   margin-left: 10.5%;
@@ -411,6 +429,7 @@ strong {
 .content p:nth-child(3) {
   font-size: 14px;
 }
+
 .content a {
   margin-top: 0;
   font-size: 12px;
@@ -418,9 +437,9 @@ strong {
 
 /* certifications */
 
-.cert_backBody{
-  background-image:url("/images/awards_background.svg");
- background-repeat: no-repeat;
+.cert_backBody {
+  background-image: url("/images/awards_background.svg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
@@ -429,11 +448,9 @@ strong {
   position: relative;
   width: 18rem;
   height: 18rem;
-  background: linear-gradient(
-    117deg,
-    rgba(35, 37, 49, 0.5) 31.8%,
-    rgba(71, 74, 91, 0.6) 83.79%
-  );
+  background: linear-gradient(117deg,
+      rgba(35, 37, 49, 0.5) 31.8%,
+      rgba(71, 74, 91, 0.6) 83.79%);
   border: 1px solid rgba(255, 255, 255, 0.31);
   color: white !important;
   cursor: pointer;
@@ -443,8 +460,8 @@ strong {
 .certifications_container:hover {
   box-shadow: 38px 38px 76px #0b0911, -38px -38px 76px #1d172c;
   transform: scale(1.2);
--webkit-transform: scale(1);
--moz-transform: scale(1.2);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1.2);
 }
 
 .card_cert_img {
@@ -479,9 +496,11 @@ a {
   .belowNav {
     margin-top: 25%;
   }
+
   .sidelinesBodyL1 {
     left: 1.5%;
   }
+
   .mainTagContainer {
     position: absolute;
     padding: 0 0 0 10%;
@@ -492,11 +511,14 @@ a {
     line-height: 25px !important;
     font-size: 40px;
   }
+
   .attrA h3 {
     font-size: 16px;
   }
-  .attrB h3 {
-    font-size: 16px;
+
+  .attrB > h3 {
+    font-size: 16px !important;
+    
   }
 
   .myImage {
@@ -527,18 +549,23 @@ a {
     border-bottom: none;
     border-left: 1px dashed rgba(255, 255, 255, 0.31);
   }
-  .educationDetails_parent > div:nth-child(2) {
+
+  .educationDetails_parent>div:nth-child(2) {
     position: unset;
   }
+
   .hrHR {
     display: none;
   }
+
   .hrVR {
     display: none;
   }
-  .educationDetails_parent > div:nth-child(5) {
+
+  .educationDetails_parent>div:nth-child(5) {
     position: unset;
   }
+
   .ed_1,
   .ed_2,
   .ed_3 {
@@ -549,16 +576,19 @@ a {
   .content {
     width: 320px;
   }
-  .content > h5 {
+
+  .content>h5 {
     font-size: 17px !important;
   }
 
   .content p:nth-child(2) {
     font-size: 12px;
   }
+
   .content p:nth-child(3) {
     font-size: 12px;
   }
+
   .content a {
     margin-top: 0;
     font-size: 12px;

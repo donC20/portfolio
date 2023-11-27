@@ -33,6 +33,38 @@ const skillData = [
     lang: "Javascript",
     img: "javascript48.png",
     progress: "82%"
+  },
+  {
+    id: 6,
+    lang: "Python",
+    img: "python48.png",
+    progress: "70%"
+  },
+  {
+    id: 7,
+    lang: "Figma",
+    img: "figma48.png",
+    progress: "65%"
+  },
+  {
+    id: 8,
+    lang: "Firebase",
+    img: "firebase48.png",
+    progress: "85%"
+  }
+  ,
+  {
+    id: 10,
+    lang: "Git",
+    img: "git48.png",
+    progress: "88%"
+  }
+  ,
+  {
+    id: 9,
+    lang: "Flask",
+    img: "flask48.png",
+    progress: "30%"
   }
 ];
 const certificationsData = [
@@ -116,15 +148,15 @@ const certificationsData = [
 
 
 export default function Home() {
-  function downloadResume(){
-      var path="downloadable/Software Engineer.pdf";
-      var link = document.createElement('a');
-      link.setAttribute('href', path); // Replace with the actual path to your file
-      link.setAttribute('download', 'resume-don-benny'); // Replace with the desired file name
-      link.style.display = 'none';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link)
+  function downloadResume() {
+    var path = "downloadable/Software Engineer.pdf";
+    var link = document.createElement('a');
+    link.setAttribute('href', path); // Replace with the actual path to your file
+    link.setAttribute('download', 'resume-don-benny'); // Replace with the desired file name
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link)
   }
   return (
     <main className="position-relative">
@@ -278,7 +310,7 @@ export default function Home() {
                     <h5 className='fw-bold'>St.Xaviers HSS</h5>
                     <p className='ps-2 text-secondary'>Chemmannar P.O, Idukki, Kerala</p>
                     <p className="ps-2">
-                    St. Xaviers Higher Secondary School is a well-known educational institution that has made a significant impact in the field of education.
+                      St. Xaviers Higher Secondary School is a well-known educational institution that has made a significant impact in the field of education.
                     </p>
                     {/* <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a> */}
                   </div>
@@ -300,7 +332,7 @@ export default function Home() {
                     <h5 className='fw-bold'>Amal Jyothi College of Engineering</h5>
                     <p className='ps-2 text-secondary'>kanjirapally P.O, Kottayam, Kerala</p>
                     <p className="ps-2">
-                    Amal Jyothi College of Engineering (Autonomous), Kanjirapally, is the first engineering college in Kerala to obtain NAAC accreditation with A grade, and the first new generation engineering college in the State to secure the prestigious NBA accreditation for prime departments. Amal Jyothi is approved by the All India Council for Technical Education (AICTE), New Delhi.
+                      Amal Jyothi College of Engineering (Autonomous), Kanjirapally, is the first engineering college in Kerala to obtain NAAC accreditation with A grade, and the first new generation engineering college in the State to secure the prestigious NBA accreditation for prime departments. Amal Jyothi is approved by the All India Council for Technical Education (AICTE), New Delhi.
                     </p>
                     <a className='ps-2' href="https://www.ajce.in/">https://www.ajce.in /</a>
                   </div>

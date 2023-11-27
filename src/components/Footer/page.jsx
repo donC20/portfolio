@@ -9,8 +9,6 @@ const Footer = () => {
                     <div className="d-flex flex-row gap-3">
                         <a href="https://www.linkedin.com/in/donbenny/"><i className="bi bi-linkedin"></i></a>
                         <a href="https://github.com/donC20"><i className="bi bi-github"></i></a>
-                        <a href="https://instagram.com/___d.o.n___?igshid=MzNlNGNkZWQ4Mg=="><i className="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/donbenny916?mibextid=ZbWKwL"><i className="bi bi-facebook"></i></a>
                         <a href="mailto:donbennyy@gmail.com"><i className="bi bi-envelope-fill"></i></a>
                         <a href="https://stackoverflow.com/users/20682176/hexated"><i className="bi bi-stack-overflow"></i></a>
                     </div>
