@@ -226,10 +226,12 @@ export default function Home() {
             {skillData.map(item => (
               <div className="col-5 col-sm-3 col-lg-2 d-flex flex-row gap-2 align-items-center skillProgress" key={item.id}>
                 <Image src={`icons/${item.img}`} width={38} height={38} alt="html" />
+                
                 <div className="vertical_line" />
                 <div className="d-flex flex-column align-items-start">
                   <span>{item.progress}</span>
                   <span>{item.lang}</span>
+                  
                 </div>
               </div>
             ))}
@@ -238,6 +240,7 @@ export default function Home() {
       </section>
       <section className="">
         {/* what i do container */}
+        
         <div className="d-flex flex-row align-items-center position-relative">
           <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody ">
             <i className="bi bi-briefcase-fill"></i>
