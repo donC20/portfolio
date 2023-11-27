@@ -172,7 +172,7 @@ export default function Home() {
             </div>
             <div className="attrA"><h3>I am</h3></div>
             <div className="nameTag">
-              <h1 className="d-flex flex-row flex-sm-column  flex-md-column flex-lg-column gap-1"><span className="firstName">Don</span>Benny</h1>
+              <h1 className="d-flex flex-row flex-sm-column  flex-md-column flex-lg-column gap-1"><span className="firstName">DON</span>BENNY</h1>
             </div>
             <div className="ms-lg-3 mb-0 text-light attrB"><h3>a Code enthusiast.</h3></div>
             <div className="ms-lg-3 mt-1 mt-lg-3 quoteSide">
