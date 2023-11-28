@@ -254,7 +254,7 @@ export default function Home() {
               <div className="d-flex flex-column col-lg-6 col-12 align-items-center justify-content-center p-lg-5 p-2 glassy-box">
                 <i className="bi bi-puzzle-fill"></i>
                 <span className="text-white">Designing</span>
-                <p>In the tech realm, I'm a dedicated software designer, crafting innovative solutions that go beyond functionality. My expertise lies in architecting elegant systems, blending creativity with meticulous technical know-how. Each project is a chance to create seamless user experiences, incorporating best practices in design patterns and scalability. With an eye for detail, I ensure every line of code contributes to robust, sustainable software architecture. Join me in crafting transformative solutions that stand resilient in the face of tomorrow's challenges.</p>
+                <p>In the tech realm, Im a dedicated software designer, crafting innovative solutions that go beyond functionality. My expertise lies in architecting elegant systems, blending creativity with meticulous technical know-how. Each project is a chance to create seamless user experiences, incorporating best practices in design patterns and scalability. With an eye for detail, I ensure every line of code contributes to robust, sustainable software architecture. Join me in crafting transformative solutions that stand resilient in the face of tomorrow's challenges.</p>
               </div>
               <div className="col-lg-6 col-12 d-flex flex-column col-6 align-items-center justify-content-center p-lg-5 p-2 glassy-box">
                 <i className="bi bi-code-slash"></i>
