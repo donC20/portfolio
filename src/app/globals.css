@@ -43,6 +43,38 @@ body {
   font-size: 30px;
 }
 
+.glassy-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Add your background image */
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  
+  margin: 20px;
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+  transform: perspective(1000px);
+  /* transform: rotateY(20deg)  rotateX(20deg); */
+  color: #fff; /* Set text color to white for better visibility on dark background */
+}
+
+.glassy-box {
+  background: rgba(255, 255, 255, 0.1); /* Adjust the alpha value for transparency */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Adjust shadow color and intensity */
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  
+}
+
+.glassy-box:hover {
+  transform: scale(1.05) rotateX(10deg) rotateY(10deg);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4); /* Adjust shadow color and intensity on hover */
+}
+
+
 .sidelines {
   left: 3%;
   height: 100%;
@@ -341,6 +373,9 @@ strong {
   color: rgba(255, 255, 255, 0.578);
   text-shadow: 0px 1px 13px #ffffff;
 }
+
+
+
 
 /* resume */
 /* education */

@@ -200,7 +200,7 @@ export default function Home() {
         </div>
       </div>
       {/* about me */}
-      <section className="">
+      <section className="" id='aboutMe'>
         {/* side line */}
         <div className="d-flex flex-row align-items-center position-relative">
           <div className="d-flex flex-column justify-content-center align-items-center mt-2 gap-1 sidelinesBody ">
@@ -226,47 +226,48 @@ export default function Home() {
             {skillData.map(item => (
               <div className="col-5 col-sm-3 col-lg-2 d-flex flex-row gap-2 align-items-center skillProgress" key={item.id}>
                 <Image src={`icons/${item.img}`} width={38} height={38} alt="html" />
-                
+
                 <div className="vertical_line" />
                 <div className="d-flex flex-column align-items-start">
                   <span>{item.progress}</span>
                   <span>{item.lang}</span>
-                  
+
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="">
+      <section className="" id='whatIdo'>
         {/* what i do container */}
-        
+
         <div className="d-flex flex-row align-items-center position-relative">
           <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody ">
             <i className="bi bi-briefcase-fill"></i>
             <div className="sidelines"></div>
           </div>
           {/* what i do head and content */}
-          <div className="text-white aboutPara">
+          <div className="text-white aboutPara glassy-container">
             <span className="sectionHeadings">What I <span className="secondWord">do</span></span>
             <br />
             <div className="d-flex align-items-center justify-content-center row whatIdo">
-              <div className="d-flex flex-column col-lg-6 col-12 align-items-center justify-content-center p-lg-5 p-2">
+              <div className="d-flex flex-column col-lg-6 col-12 align-items-center justify-content-center p-lg-5 p-2 glassy-box">
                 <i className="bi bi-puzzle-fill"></i>
                 <span className="text-white">Designing</span>
-                <p>Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure</p>
+                <p>In the tech realm, I'm a dedicated software designer, crafting innovative solutions that go beyond functionality. My expertise lies in architecting elegant systems, blending creativity with meticulous technical know-how. Each project is a chance to create seamless user experiences, incorporating best practices in design patterns and scalability. With an eye for detail, I ensure every line of code contributes to robust, sustainable software architecture. Join me in crafting transformative solutions that stand resilient in the face of tomorrow's challenges.</p>
               </div>
-              <div className="col-lg-6 col-12 d-flex flex-column col-6 align-items-center justify-content-center p-lg-5 p-2">
+              <div className="col-lg-6 col-12 d-flex flex-column col-6 align-items-center justify-content-center p-lg-5 p-2 glassy-box">
                 <i className="bi bi-code-slash"></i>
                 <span className="text-white">Developing</span>
-                <p>Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt irure</p>
+                <p>As a dynamic software developer, I specialize in the end-to-end process of designing, coding, testing, and deploying innovative solutions. Proficient in diverse languages and frameworks, I translate concepts into user-friendly applications, ensuring efficiency and scalability. With expertise in the entire development lifecycle, from requirements analysis to maintenance, I stay updated on cutting-edge technologies for industry-aligned solutions. My commitment to clean, maintainable code and user-centered design reflects in crafting products that meet specifications while delivering a seamless experience. Committed to continuous learning, I embrace new challenges, driving improvement in the ever-evolving software development landscape.</p>
               </div>
             </div>
           </div>
+
         </div>
       </section>
       {/* my resume */}
-      <div className="resumeDetails position-relative">
+      <div className="resumeDetails position-relative" id='educationHead'>
         {/* what i do container */}
         <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-1 sidelinesBody">
           <i className="bi bi-briefcase-fill"></i>
@@ -297,7 +298,7 @@ export default function Home() {
                     <p className="ps-2">
                       Vijayamtha Public School is a catholic institution established and managed by the Sisters of Adoration of the Blessed Sacrament(SABS) of Jaimatha Province Idukki. The school is directly under the management of Jairani Education trust and is affiliated to CBSE.
                     </p>
-                    <a className='ps-2' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
+                    <a className='ps-2' target='_blank' href="https://vijayamathapublicschool.com/">https://vijayamathapublicschool.com/</a>
                   </div>
                 </div>
               </div>
@@ -337,7 +338,7 @@ export default function Home() {
                     <p className="ps-2">
                       Amal Jyothi College of Engineering (Autonomous), Kanjirapally, is the first engineering college in Kerala to obtain NAAC accreditation with A grade, and the first new generation engineering college in the State to secure the prestigious NBA accreditation for prime departments. Amal Jyothi is approved by the All India Council for Technical Education (AICTE), New Delhi.
                     </p>
-                    <a className='ps-2' href="https://www.ajce.in/">https://www.ajce.in /</a>
+                    <a className='ps-2' target='_blank' href="https://www.ajce.in/">https://www.ajce.in /</a>
                   </div>
                 </div>
               </div>
@@ -354,13 +355,13 @@ export default function Home() {
         <div className="d-flex flex-row align-items-center">
 
           {/* Cerifications */}
-          <div className="text-white aboutPara">
+          <div className="text-white aboutPara" id='certificationsHead'>
             <span className="sectionHeadings">My <span className="secondWord">Certifications</span></span>
           </div>
         </div>
         <div className="row justify-content-center align-items-center p-3 gap-5 cert_backBody">
           {certificationsData.map(item => (
-            <a href={item.link} className="card certifications_container col-3 p-0" key={item.id}>
+            <a href={item.link} target='_blank' className="card certifications_container col-3 p-0" key={item.id}>
               <div className="card_cert_img d-flex flex-row">
                 <Image className="card_image_from" src={item.img_company} width={100} height={115} alt="Card image cap" />
                 <Image className="card_image_on" src={item.img_lang} width={55} height={55} alt="Card image cap" />
@@ -375,7 +376,7 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="mt-4 position-relative">
+      <div className="mt-4 position-relative" id='contactHead'>
         {/* Contact */}
         <div className="d-flex flex-column justify-content-center align-items-center gap-1 mt-3 sidelinesBody">
           <i className="bi bi-briefcase-fill"></i>

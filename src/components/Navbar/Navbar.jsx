@@ -15,10 +15,12 @@ const Navbar = () => {
                         </div>
                         <div className={`text-center text-white w-100 ${styles.centerText}`}>{"<"}Hello, there!{"/>"}</div>
                         <div className={`navbar-nav d-flex justify-content-end w-100 ${styles.navbarNav}`}>
-                            <a className="nav-link" href="#">About</a>
-                            <a className="nav-link">Resume</a>
-                            <a className="nav-link">Contact</a>
-                            <a className="nav-link " href='https://github.com/donC20'><i className="bi bi-github"></i></a>
+                            <a className="nav-link" href="#aboutMe">About</a>
+                            <a className="nav-link" href='#resume_download'>Resume</a>
+                            <a className="nav-link" href='#certificationsHead'>Certifications</a>
+                            <a className="nav-link" href='#educationHead'>Education</a>
+                            <a className="nav-link" href='#contactHead'>Contact</a>
+                            <a className="nav-link " target='_blank' href='https://github.com/donC20'><i className="bi bi-github"></i></a>
                         </div>
                     </div>
                 </div>
